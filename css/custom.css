@@ -34,7 +34,7 @@ hr {
   width: 100px;
 }
 
-.fa-user, .fa-pencil, .fa-money {
+.fa-user, .fa-pencil, .fa-money, .fa-angle-up {
   position: relative;
   top: 20px;
   color: white;
@@ -106,6 +106,26 @@ footer img {
   top: 200px;
 }
 
+/* BACK TO THE TOP */
+#back-to-top {
+  position: fixed;
+  right: 30px;
+  top: 90%;
+}
+
+#back-to-top .my-icons
+{
+  text-align: center;
+  display: inline-block;
+  background-color: #333333;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+}
+
+.fa-angle-up {
+  top: 0px;
+}
 /* Responsive Styling */
 
 @media (max-width: 1199px)
