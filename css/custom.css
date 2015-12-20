@@ -1,11 +1,115 @@
 /* Vos customisations des classes de Bootstrap */
 
+/* GENERAL  */
 
+body {
+}
 
+span.upper {
+  text-transform: uppercase;
+}
+
+span.color {
+  color: #E74C3C;
+}
+
+h2 {
+  text-transform: uppercase;
+  color: #E74C3C;
+}
+
+hr {
+  width: 140px;
+  border: 1px solid #E74C3C;
+  color: #E74C3C;
+}
+
+.my-icons
+{
+  text-align: center;
+  display: inline-block;
+  background-color: #333333;
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+}
+
+.fa-user, .fa-pencil, .fa-money {
+  position: relative;
+  top: 20px;
+  color: white;
+}
+
+.jumbotron {
+  margin: 0px;
+}
+
+/* ALL PARTS */
+
+#home, #who, #get-involved {
+  text-align: center;
+}
+
+/* HOME */
+
+#home {
+  /*default 2200x1467*/
+  background: url(../images/hero-image.jpg) no-repeat center 0;
+  background-size: 1000px 733px;
+  background-size: 220% 220%;
+  /*background-size: cover;*/
+  min-height: 800px;
+}
+
+#home h1, #home p {
+  color: white !important;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 80px;
+}
+
+#home button {
+  width: 220px;
+  font-size: 2em;
+}
+
+#home img {
+  padding-top: 40px;
+}
+
+/* WHO */
+
+#who {
+  background-color: white;
+}
+
+/* INVOLVED */
+
+#get-involved {
+  background-color: #F5F5F5;
+}
+
+#get-involved button {
+  color: #E74C3C;
+  text-transform: capitalize;
+}
+
+/* FOOTER */
+
+footer {
+  background-color: #F74C3C;
+  min-height: 300px;
+}
+
+footer img {
+  position: relative;
+  top: 200px;
+}
 
 /* Responsive Styling */
 
-@media (max-width: 1199px) {
+@media (max-width: 1199px)
+{
 
 }
 
