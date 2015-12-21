@@ -9,6 +9,11 @@ span.upper {
   text-transform: uppercase;
 }
 
+nav {
+  margin: 0px !important;
+  border-radius: 0px !important;
+}
+
 span.color {
   color: #E74C3C;
 }
@@ -50,6 +55,19 @@ hr {
   text-align: center;
 }
 
+
+/* NAVIGATION */
+
+nav li a {
+  text-transform: uppercase;
+  color: white !important;
+}
+
+.navbar-nav li:hover, .navbar-nav li:hover a {
+  background-color: white;
+  color: black !important;
+}
+
 /* HOME */
 
 #home {
@@ -75,6 +93,34 @@ hr {
 
 #home img {
   padding-top: 40px;
+}
+
+/* MODAL */
+
+.modal-dialog {
+  width: 50%;
+  margin: 25%;
+  margin-top: 10%;
+}
+
+.modal-open {
+  padding: 0px !important;
+}
+
+.close {
+  border-radius: 50% !important;
+  background-color: white !important;
+  opacity:1 !important;
+  position: fixed;
+  right: 1%;
+  top: 1%;
+  width: 50px;
+  height: 50px;
+}
+
+video {
+  width: 100%;
+  height: auto;
 }
 
 /* WHO */

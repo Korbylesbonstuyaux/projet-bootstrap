@@ -22,16 +22,16 @@
 
   <body>
 
-    <nav>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <!-- Votre code ici -->
       <div class="container">
-        <div class="">
-          <span>OneMillion</span>lines
+        <div class="navbar-header">
+          <a class="navbar-brand" href="#"><img src="images/top-logo.png" alt="Logo"></a>
         </div>
-        <div class="">
-          <li>Who are you</li>
-          <li>Get involved</li>
-        </div>
+        <ul class="nav navbar-nav pull-right">
+          <li><a href="#who">Who are you</a></li>
+          <li><a href="#get-involved">Get involved</a></li>
+        </ul>
       </div>
     </nav>
 
@@ -49,11 +49,26 @@
           All over the country people are taking about the <strong><span class="upper">hour of code</span></strong> challenge issued by <strong><span class="upper">code</span>.org</strong>.
           Millions lines of code are being written. In the capital of Florida, Tallahasse, the community is taking the challenge and our goal is to write 1,000,000 lines of code_
         </p>
-        <button name="more" type="button" class="btn btn-danger btn-lg">Learn more <span class="fa fa-angle-double-right"></span></button>
+        <button name="more" type="button" class="btn btn-danger btn-lg" data-toggle="modal" href="#infos" data-backdrop="static">Learn more <span class="fa fa-angle-double-right"></span></button>
         <div>
           <img src="images/code.png" alt="Logo code">
         </div>
       </div>
+    </div>
+
+    <div class="container">
+    <div class="modal fade" id="infos">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <!-- <div class="modal-header">
+          </div> -->
+          <div class="modal-body">
+            <button type="button" class="close" data-dismiss="modal">x</button>
+            <video src="videos/bootstrap-introduction.mp4" controls="controls">Boostrap initiation</video>
+          </div>
+        </div>
+      </div>
+    </div>
     </div>
 
     <div id="who" class="jumbotron">
@@ -153,5 +168,10 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/smoothscroll.js"></script>
+    <script>
+      $("body").on("hidden.bs.modal", ".modal", function () {
+          $(this).removeData("bs.modal");
+      });
+    </script>
   </body>
 </html>
